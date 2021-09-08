@@ -14,7 +14,7 @@ class MenuMakanan extends Component {
     rubahPesanan() {
         this.setState((state,props) => {
             return {
-                pesan: state.pesan += 1
+                pesan: state.pesan + 1
             }
         })
     }
