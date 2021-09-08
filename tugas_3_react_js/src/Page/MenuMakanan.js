@@ -14,7 +14,7 @@ class MenuMakanan extends Component {
     rubahPesanan() {
         this.setState((state,props) => {
             return {
-                pesanan: state.pesan
+                pesan: state.pesan += 1
             }
         })
     }
@@ -65,7 +65,7 @@ class MenuMakanan extends Component {
         
                 <br />
                 <input type="text" onChange={this.pesanan}/>
-                <h3>Pesanan Anda : {this.state.pesanan}</h3>
+                <h3>Pesanan Anda : {this.state.pesan}</h3>
             </div>
         )
     }
